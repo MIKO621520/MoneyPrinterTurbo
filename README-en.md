@@ -316,6 +316,8 @@ git clone https://github.com/harry0703/MoneyPrinterTurbo.git
 
 On first launch, the project creates `config.toml` from `config.example.toml`, so you do not need to create the file manually. Before using cloud LLMs, online footage, or AI video services, add the corresponding API keys in the WebUI basic settings.
 
+Anthropic Claude defaults to Claude Opus 5.5 (`claude-opus-5-5`) when no model name is set. If you use a Claude Pro, Max, or Team subscription, you can also select the `Claude Code` provider and set the model name to `opus`; make sure the Claude Code CLI is logged in wherever MoneyPrinterTurbo runs. Docker deployments need `CLAUDE_CODE_OAUTH_TOKEN`.
+
 ### Docker Deployment 🐳
 
 #### ① Launch the Docker Container
