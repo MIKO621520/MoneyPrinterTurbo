@@ -301,6 +301,7 @@ openai_base_url = ""
 openai_model_name = ""
 
 # Anthropic Claude, called through the OpenAI-compatible endpoint.
+# The default model is Claude Opus 5.5 (claude-opus-5-5).
 # API key: https://platform.claude.com/settings/keys
 anthropic_api_key = ""
 anthropic_base_url = ""
@@ -412,8 +413,8 @@ ollama_model_name = ""
 #   - it must be authenticated: interactively via `claude` on the host, or with
 #     a long-lived token from `claude setup-token` exported as
 #     CLAUDE_CODE_OAUTH_TOKEN (needed for Docker)
-# Leave model_name empty to use the CLI's current default model, or set one such
-# as "claude-opus-5" / "claude-sonnet-5". Leave cli_path empty to resolve
+# Set model_name to "opus" for the latest Opus model (currently Opus 5.5).
+# Leave it empty to use the CLI's default model. Leave cli_path empty to resolve
 # `claude` from PATH. Leave timeout empty to use the 300s default.
 # Calls use your Claude subscription usage limits; conflicting ANTHROPIC_* and
 # CLAUDE_CODE_USE_* environment variables are removed before the CLI runs.
