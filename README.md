@@ -311,6 +311,8 @@ git clone https://github.com/harry0703/MoneyPrinterTurbo.git
 
 首次启动时，项目会根据 `config.example.toml` 自动创建 `config.toml`，无需手动创建配置文件。使用云端大模型、在线素材或 AI 视频等服务前，请在 WebUI 的基础设置中填写对应的 API Key。
 
+Anthropic Claude 在未设置模型名时默认使用 Claude Opus 5.5（`claude-opus-5-5`）。使用 Claude Pro、Max 或 Team 订阅时，也可选择 `Claude Code` Provider，将模型名设为 `opus`，并确保 MoneyPrinterTurbo 运行环境中的 Claude Code CLI 已登录；Docker 部署需提供 `CLAUDE_CODE_OAUTH_TOKEN`。
+
 ### Docker 部署 🐳
 
 #### ① 启动 Docker
